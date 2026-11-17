@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuppu Jayavardhan — Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website of Vuppu Jayavardhan, 1st Year B.Tech CSE student at Joy University (NIAT/NxtWave) and aspiring software developer."
+    />
+    <meta property="og:title" content="Vuppu Jayavardhan — Portfolio" />
+    <meta
+      property="og:description"
+      content="Personal portfolio website of Vuppu Jayavardhan, 1st Year B.Tech CSE student at Joy University (NIAT/NxtWave) and aspiring software developer."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans (Display), DM Sans (Body), JetBrains Mono (Labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Pure CSS3 Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ====================================================================
+         Header Navigation (3-Zone Top Bar + Pure CSS Mobile Menu)
+         ==================================================================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-link">Vuppu Jayavardhan</a>
+
+        <!-- Mobile Menu Toggle (Pure HTML/CSS, No JavaScript) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-checkbox"
+          aria-label="Toggle navigation menu"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </label>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Primary Header Action -->
+        <div class="header-action">
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ==================================================================
+           1. Home / Hero Section
+           ================================================================== -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <p class="hero-subtitle">
+                B.Tech CSE Student · Python Beginner · Web Development Enthusiast
+              </p>
+              <h1 class="hero-title">Vuppu Jayavardhan</h1>
+              <p class="hero-role">Aspiring Software Developer</p>
+              <p class="hero-intro">
+                First-year Computer Science and Engineering undergraduate at Joy University in
+                collaboration with NIAT/NxtWave. Passionate about programming, structured problem
+                solving, and building clean, responsive web experiences with HTML5, CSS3, and
+                Python.
+              </p>
+
+              <div class="hero-actions">
+                <!-- Data-URI Download CV link works without JavaScript or backend -->
+                <a
+                  href="data:text/plain;charset=utf-8,VUPPU%20JAYAVARDHAN%0AAspiring%20Software%20Developer%20%7C%201st%20Year%20B.Tech%20CSE%20Student%0A%0ACONTACT%0AEmail%3A%20jayavardhanvuppu1%40gmail.com%0AGitHub%3A%20https%3A%2F%2Fgithub.com%2Fjayavardhanvuppu1-prog%0ALinkedIn%3A%20https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvuppu-jayavardhan-8130bb432%0A%0AEDUCATION%0ABachelor%20of%20Technology%20(B.Tech)%20-%20Computer%20Science%20and%20Engineering%20(CSE)%0AJoy%20University%20(Academic%20Collaboration%3A%20NIAT%2FNxtWave)%0AStatus%3A%20Currently%20Pursuing%20-%201st%20Year%0A%0ASKILLS%0A-%20Python%20(Beginner)%0A-%20HTML5%0A-%20CSS3%0A-%20Basic%20Web%20Development%0A-%20Computer%20Science%20Fundamentals%0A-%20Problem%20Solving%0A%0ACAREER%20GOALS%0ABecome%20a%20professional%20software%20developer%2C%20build%20real-world%20projects%2C%20and%20gain%20practical%20industry%20experience."
+                  download="Vuppu_Jayavardhan_CV.txt"
+                  class="btn btn-primary"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Download CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+
+              <div class="hero-socials">
+                <a
+                  href="https://github.com/jayavardhanvuppu1-prog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="GitHub Profile"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                    />
+                  </svg>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/vuppu-jayavardhan-8130bb432"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="LinkedIn Profile"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                    />
+                  </svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="hero-media">
+              <div class="profile-frame">
+                <div class="profile-fallback" aria-hidden="true">
+                  <span class="profile-monogram">VJ</span>
+                  <span class="profile-fallback-text">Vuppu Jayavardhan</span>
+                </div>
+                <img
+                  src="/assets/aistudio/profile.jpg._766c7cbf.jpeg"
+                  alt="Profile photo of Vuppu Jayavardhan, B.Tech CSE Student"
+                  class="profile-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Full-Width Academic Snapshot Strip -->
+          <div class="hero-summary-strip">
+            <div class="summary-item">
+              <span class="summary-label">Degree</span>
+              <span class="summary-value">B.Tech — CSE (1st Year)</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">University</span>
+              <span class="summary-value">Joy University</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Collaboration</span>
+              <span class="summary-value">NIAT / NxtWave</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Core Focus</span>
+              <span class="summary-value">Python · HTML5 · CSS3</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           2. About Me Section
+           ================================================================== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">01. About Me</span>
+            <h2 class="section-title">Building a strong foundation in software development.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-prose">
+              <p>
+                I am a <strong>1st-year B.Tech Computer Science and Engineering (CSE)</strong>
+                student at <strong>Joy University</strong>, studying in academic collaboration with
+                <strong>NIAT/NxtWave</strong>. My journey into computer science is driven by
+                curiosity about how software systems work and how code solves everyday problems.
+              </p>
+              <p>
+                Currently, I am focused on learning <strong>Python, HTML5, CSS3</strong>, and core
+                web development concepts. I enjoy translating ideas into clean, structured web pages
+                and writing beginner-friendly programs that strengthen my logical thinking.
+              </p>
+              <p>
+                Beyond coursework, I am eager to explore new technologies, build practical projects,
+                and steadily sharpen my problem-solving abilities. My long-term ambition is to grow
+                into a skilled, reliable <strong>professional software developer</strong>.
+              </p>
+            </div>
+
+            <aside class="glass-card about-highlights" aria-label="Core focus areas">
+              <h3 class="highlights-title">Current Focus</h3>
+              <ul class="highlights-list">
+                <li class="highlight-item">
+                  <span class="highlight-heading">Programming &amp; Logic</span>
+                  <span class="highlight-desc">
+                    Practicing Python syntax, control flow, and foundational problem solving.
+                  </span>
+                </li>
+                <li class="highlight-item">
+                  <span class="highlight-heading">Web Foundations</span>
+                  <span class="highlight-desc">
+                    Crafting semantic HTML5 documents and responsive layouts with CSS3.
+                  </span>
+                </li>
+                <li class="highlight-item">
+                  <span class="highlight-heading">Continuous Learning</span>
+                  <span class="highlight-desc">
+                    Developing creative, useful projects while expanding technical depth each term.
+                  </span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           3. Skills Section
+           ================================================================== -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">02. Technical Skills</span>
+            <h2 class="section-title">Foundational skills I am actively developing.</h2>
+            <p class="section-lead">
+              An honest overview of the languages, web technologies, and computer science concepts I
+              currently practice.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <article class="glass-card skill-card">
+              <div class="skill-header">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <h3 class="skill-title">Python</h3>
+              <p class="skill-desc">
+                Writing beginner-level scripts, conditional logic, loops, and functions to build
+                comfort with core programming workflows.
+              </p>
+            </article>
+
+            <!-- Skill 2: HTML5 -->
+            <article class="glass-card skill-card">
+              <div class="skill-header">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="8" y1="13" x2="16" y2="13" />
+                    <line x1="8" y1="17" x2="16" y2="17" />
+                  </svg>
+                </div>
+                <span class="skill-level">Foundation</span>
+              </div>
+              <h3 class="skill-title">HTML5</h3>
+              <p class="skill-desc">
+                Structuring clean, accessible web documents using semantic tags such as header,
+                main, section, article, and footer.
+              </p>
+            </article>
+
+            <!-- Skill 3: CSS3 -->
+            <article class="glass-card skill-card">
+              <div class="skill-header">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="9" y1="21" x2="9" y2="9" />
+                  </svg>
+                </div>
+                <span class="skill-level">Foundation</span>
+              </div>
+              <h3 class="skill-title">CSS3</h3>
+              <p class="skill-desc">
+                Designing responsive interfaces using Flexbox, CSS Grid, custom properties, smooth
+                hover transitions, and media queries.
+              </p>
+            </article>
+
+            <!-- Skill 4: Basic Web Development -->
+            <article class="glass-card skill-card">
+              <div class="skill-header">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                </div>
+                <span class="skill-level">Learning</span>
+              </div>
+              <h3 class="skill-title">Basic Web Development</h3>
+              <p class="skill-desc">
+                Combining semantic markup and modern styling to assemble static, mobile-friendly
+                portfolios and landing pages.
+              </p>
+            </article>
+
+            <!-- Skill 5: Computer Science Fundamentals -->
+            <article class="glass-card skill-card">
+              <div class="skill-header">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <rect x="9" y="9" width="6" height="6" />
+                    <line x1="9" y1="1" x2="9" y2="4" />
+                    <line x1="15" y1="1" x2="15" y2="4" />
+                    <line x1="9" y1="20" x2="9" y2="23" />
+                    <line x1="15" y1="20" x2="15" y2="23" />
+                  </svg>
+                </div>
+                <span class="skill-level">1st Year CSE</span>
+              </div>
+              <h3 class="skill-title">Computer Science Fundamentals</h3>
+              <p class="skill-desc">
+                Developing core engineering literacy in algorithmic thinking, data representation,
+                and software principles through B.Tech coursework.
+              </p>
+            </article>
+
+            <!-- Skill 6: Problem Solving -->
+            <article class="glass-card skill-card">
+              <div class="skill-header">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 18h6" />
+                    <path d="M10 22h4" />
+                    <path
+                      d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"
+                    />
+                  </svg>
+                </div>
+                <span class="skill-level">Developing</span>
+              </div>
+              <h3 class="skill-title">Problem Solving</h3>
+              <p class="skill-desc">
+                Breaking down programming exercises into clear, step-by-step logic and debugging
+                code systematically.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           4. Projects Section
+           ================================================================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">03. Projects</span>
+            <h2 class="section-title">Selected learning &amp; practice projects.</h2>
+            <p class="section-lead">
+              Hands-on projects built to practice semantic markup, responsive styling, and
+              foundational programming logic.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Personal Portfolio Website -->
+            <article class="glass-card project-card">
+              <div class="project-media">
+                <div class="project-fallback" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                  <span>Project Preview Placeholder</span>
+                </div>
+                <img
+                  src="/src/assets/images/project_portfolio_preview_1794889080863.jpg"
+                  alt="Preview of Personal Portfolio Website layout"
+                  class="project-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+
+              <div class="project-body">
+                <span class="project-tech">HTML5 · CSS3</span>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-desc">
+                  A personal website designed and coded from scratch to showcase my academic
+                  profile, technical skills, education, and career goals.
+                </p>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/jayavardhanvuppu1-prog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Python Programming Projects -->
+            <article class="glass-card project-card">
+              <div class="project-media">
+                <div class="project-fallback" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="4 17 10 11 4 5" />
+                    <line x1="12" y1="19" x2="20" y2="19" />
+                  </svg>
+                  <span>Project Preview Placeholder</span>
+                </div>
+                <img
+                  src="/src/assets/images/project_python_preview_1794889081234.jpg"
+                  alt="Preview of Python programming exercises and scripts"
+                  class="project-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+
+              <div class="project-body">
+                <span class="project-tech">Python</span>
+                <h3 class="project-title">Python Programming Projects</h3>
+                <p class="project-desc">
+                  Beginner-level Python programs and structured programming exercises focused on
+                  control flow, loops, functions, and basic problem solving.
+                </p>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/jayavardhanvuppu1-prog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Responsive Landing Page -->
+            <article class="glass-card project-card">
+              <div class="project-media">
+                <div class="project-fallback" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <path d="M3 9h18" />
+                    <path d="M9 21V9" />
+                  </svg>
+                  <span>Project Preview Placeholder</span>
+                </div>
+                <img
+                  src="/src/assets/images/project_responsive_preview_1794889081278.jpg"
+                  alt="Preview of Responsive Landing Page across laptop and tablet"
+                  class="project-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+
+              <div class="project-body">
+                <span class="project-tech">HTML5 · CSS3</span>
+                <h3 class="project-title">Responsive Landing Page</h3>
+                <p class="project-desc">
+                  A simple, modern webpage featuring responsive layouts built with CSS Grid,
+                  Flexbox, and clean media queries across mobile and desktop screens.
+                </p>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/jayavardhanvuppu1-prog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                      />
+                    </svg>
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           5. Education Section
+           ================================================================== -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">04. Education</span>
+            <h2 class="section-title">Academic background.</h2>
+          </div>
+
+          <article class="glass-card education-card">
+            <div class="education-institution">
+              <span class="education-status">Currently Pursuing · 1st Year</span>
+              <h3 class="education-school">Joy University</h3>
+              <p class="education-collab">In academic collaboration with NIAT / NxtWave</p>
+            </div>
+
+            <div class="education-details">
+              <div class="edu-field">
+                <span class="edu-label">Degree</span>
+                <span class="edu-value">Bachelor of Technology (B.Tech)</span>
+              </div>
+              <div class="edu-field">
+                <span class="edu-label">Branch</span>
+                <span class="edu-value">Computer Science &amp; Engineering (CSE)</span>
+              </div>
+              <div class="edu-field">
+                <span class="edu-label">Academic Collaboration</span>
+                <span class="edu-value">NIAT / NxtWave</span>
+              </div>
+              <div class="edu-field">
+                <span class="edu-label">Current Status</span>
+                <span class="edu-value">1st Year Undergraduate</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           6. Career Goals Section
+           ================================================================== -->
+      <section id="goals" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">05. Career Goals</span>
+            <h2 class="section-title">Where I am aiming next.</h2>
+            <p class="section-lead">
+              Clear milestones guiding my undergraduate learning and internship preparation.
+            </p>
+          </div>
+
+          <div class="goals-grid">
+            <article class="glass-card goal-card">
+              <span class="goal-number">01</span>
+              <h3 class="goal-title">Become a professional software developer</h3>
+              <p class="goal-desc">
+                Build the engineering discipline, coding habits, and technical foundations required
+                to contribute effectively in software teams.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-number">02</span>
+              <h3 class="goal-title">Improve programming and technical skills</h3>
+              <p class="goal-desc">
+                Strengthen my grasp of Python, data structures, algorithms, and computer science
+                fundamentals through daily practice.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-number">03</span>
+              <h3 class="goal-title">Build real-world projects</h3>
+              <p class="goal-desc">
+                Move beyond classroom exercises by creating thoughtful, usable web and Python
+                applications that solve real problems.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-number">04</span>
+              <h3 class="goal-title">Learn modern web development technologies</h3>
+              <p class="goal-desc">
+                Progress from strong HTML5 and CSS3 mastery into JavaScript, frontend architecture,
+                and full-stack development workflows.
+              </p>
+            </article>
+
+            <article class="glass-card goal-card">
+              <span class="goal-number">05</span>
+              <h3 class="goal-title">Gain practical industry experience</h3>
+              <p class="goal-desc">
+                Seek meaningful internship opportunities where I can learn from experienced engineers
+                and ship production code.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           7. Contact Section
+           ================================================================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">06. Contact</span>
+            <h2 class="section-title">Let’s connect.</h2>
+          </div>
+
+          <div class="glass-card contact-panel">
+            <div class="contact-copy">
+              <h3 class="contact-heading">Open to internships, learning, and project feedback.</h3>
+              <p class="contact-message">
+                Thank you for visiting my portfolio. Whether you are a recruiter looking for an
+                eager first-year B.Tech CSE intern, a fellow student interested in collaborating, or
+                a developer willing to share advice, I would be glad to hear from you.
+              </p>
+              <div class="contact-cta">
+                <a href="mailto:jayavardhanvuppu1@gmail.com" class="btn btn-primary">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  Send Email
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-channels">
+              <a href="mailto:jayavardhanvuppu1@gmail.com" class="channel-link">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Email</span>
+                  <span class="channel-value">jayavardhanvuppu1@gmail.com</span>
+                </div>
+              </a>
+
+              <a
+                href="https://github.com/jayavardhanvuppu1-prog"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-link"
+              >
+                <div class="channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                    />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-value">github.com/jayavardhanvuppu1-prog</span>
+                </div>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/vuppu-jayavardhan-8130bb432"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-link"
+              >
+                <div class="channel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                    />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-value">in/vuppu-jayavardhan-8130bb432</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         Footer
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; 2026 Vuppu Jayavardhan. Built with semantic HTML5 &amp; CSS3.
+        </p>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="mailto:jayavardhanvuppu1@gmail.com" class="footer-link">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
